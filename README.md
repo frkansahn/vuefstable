@@ -10,6 +10,8 @@ Arama · Sıralama · Sayfalama · Çoklu Seçim · Yükleniyor Durumu
 ```bash
 npm install vuefstable
 
+```
+
 ---
 
 ## Plugin Oluştur (plugins/vuefstable.js)
