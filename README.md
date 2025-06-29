@@ -20,6 +20,8 @@ import VueFsTablePlugin from 'vuefstable'
 
 Vue.use(VueFsTablePlugin)
 
+```
+
 ---
 
 ## nuxt.config.js içine ekleme
