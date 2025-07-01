@@ -1,47 +1,3 @@
-# 📊 vuefstable
-
-Vue 2 / Nuxt 2 uyumlu, sade ve özelleştirilebilir tablo bileşeni.  
-Arama · Sıralama · Sayfalama · Çoklu Seçim · Yükleniyor Durumu
-
----
-
-## 🚀 Kurulum
-
-```bash
-npm install vuefstable
-
-```
-
----
-
-## Plugin Oluştur (plugins/vuefstable.js)
-
-```bash
-import Vue from 'vue'
-import VueFsTablePlugin from 'vuefstable'
-
-Vue.use(VueFsTablePlugin)
-
-```
-
----
-
-## nuxt.config.js içine ekleme
-
-```bash
-export default {
-  plugins: ['~/plugins/vuefstable.js']
-}
-```
-
-
----
-
-
-## ⚙️ Temel Kullanım
-
-```bash
-
 <template>
     <div class="table-example">
         <div class="table-example-wrapper">
@@ -154,83 +110,38 @@ export default {
 </script>
 
 <style scoped>
-    a {
-        text-decoration: none;
-        color: #000;
-    }
+a {
+    text-decoration: none;
+    color: #000;
+}
 
-    .table-example {
-        width: 100%;
-        float: left;
-        display: flex;
-        justify-content: center;
-        font-family: sans-serif;
-    }
+.table-example {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
 
-    .table-example-wrapper {
-        width: 100%;
-        max-width: 1000px;
-        float: left;
-    }
+.table-example-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    float: left;
+}
 
-    .action-btn {
-        margin-right: 8px;
-        padding: 4px 8px;
-        font-size: 13px;
-        border: none;
-        background-color: #f0f0f0;
-        border-radius: 4px;
-        cursor: pointer;
-        color: #5f5f5f;
-    }
+.action-btn {
+    margin-right: 8px;
+    padding: 4px 8px;
+    font-size: 13px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #5f5f5f;
+}
 
-    .action-btn.danger {
-        background-color: #ffdddd;
-        color: rgb(214, 24, 24);
-    }
+.action-btn.danger {
+    background-color: #ffdddd;
+    color: rgb(214, 24, 24);
+}
 </style>
-
-
-
-```
-
----
-
-## 🎛 Özellikler
-
-🔍 Arama (Search)
-
-🔃 Sıralama (Sortable)
-
-📄 Sayfalama (Pagination)
-
-⏳ Yükleniyor Durumu
-
-☑️ Çoklu Seçim (Checkbox)
-
-🧩 Slot ile Hücre Özelleştirme
-
-🎨 Tema Değiştirme
-
-
----
-
-
-## 🔧 Props
-
-| Prop       | Açıklama                                                        | Tip       | Zorunlu |
-| ---------- | --------------------------------------------------------------- | --------- | ------- |
-| `items`    | Gösterilecek veri listesi                                       | `Array`   | ✅       |
-| `columns`  | Kolon tanımları (`{ key, label, sort }` gibi)                   | `Array`   | ✅       |
-| `total`    | Toplam kayıt sayısı (dış kaynaklı sayfalama için)               | `Number`  | ❌       |
-| `loading`  | Yükleniyor durumu (true ise loading satırı gösterilir)          | `Boolean` | ❌       |
-| `search`   | Arama terimi (dışarıdan kontrol edilen)                         | `String`  | ❌       |
-| `checkbox` | Satır seçim checkbox'ları gösterilsin mi?                       | `Boolean` | ❌       |
-| `page`     | Aktif sayfa numarası (dış kontrol)                              | `Number`  | ❌       |
-| `limit`    | Sayfa başına gösterilecek kayıt sayısı                          | `Number`  | ❌       |
-| `perPages` | Kullanıcının seçebileceği sayfa başı değerleri                  | `Array`   | ❌       |
-| `sortKey`  | Hangi kolona göre sıralama yapılacak                            | `String`  | ❌       |
-| `sortAsc`  | Sıralama yönü (`"asc"` / `"desc"`)                              | `String`  | ❌       |
-| `size`     | Tablo boyutu (`"sm"`, `"md"`, `"lg"`, `"xl"`)                   | `String`  | ❌       |
-| `theme`    | Tema stili (`"classic"`, `"striped"`, `"dark"`, `"modern"` vb.) | `String`  | ❌       |
-

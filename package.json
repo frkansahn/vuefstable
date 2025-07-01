@@ -3,6 +3,7 @@
     "version": "1.0.3",
     "description": "Vue 2 / Nuxt 2 uyumlu smart table component",
     "scripts": {
+        "dev": "vue-cli-service serve ./example/main.js --open",
         "build": "rollup -c"
     },
     "main": "dist/vuefstable.umd.js",
@@ -40,5 +41,9 @@
     "bugs": {
         "url": "https://github.com/frkansahn/vuefstable.git/issues"
     },
-    "homepage": "https://github.com/frkansahn/vuefstable.git#readme"
+    "homepage": "https://github.com/frkansahn/vuefstable.git#readme",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.7.2",
+        "@vue/cli-service": "^5.0.8"
+    }
 }
