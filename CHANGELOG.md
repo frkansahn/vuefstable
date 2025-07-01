@@ -4,7 +4,7 @@ Tüm önemli değişiklikler bu dosyada belgelenir.
 
 ---
 
-## [1.0.0] - 2025-07-01
+## [1.0.4] - 2025-07-01
 
 ### 🚀 Eklendi
 - Yeni tema sistemi: `classic`, `dark`, `striped`, `modern`, `material`, `danger`, `warning`, `borderless`.
